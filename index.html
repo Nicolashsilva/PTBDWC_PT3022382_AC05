@@ -24,36 +24,13 @@
         .nav {
             text-align: right;
         }
-        .nav .dropdown {
-            display: inline-block;
-        }
-        .nav a, .dropdown button {
+        .nav a {
+            margin-left: 10px;
             color: #4B0082;
             text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
         }
-        .nav a:hover, .dropdown-content a:hover, .dropdown button:hover {
-            background-color: #ddd;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            
-        }
-        .dropdown-content a {
-            padding: 12px 16px;
-            display: block;
-            text-align: left;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .nav a:hover {
+            text-decoration: underline;
         }
         .container {
             padding: 0 15px;
@@ -156,15 +133,9 @@
         <img src="https://raw.githubusercontent.com/Nicolashsilva/PTBDWC_PT3022382_AC01/refs/heads/main/Logo.jpg" alt="Logo Instituto Federal São Paulo">
         <div class="nav">
             <a href="#home" onclick="showSection('home')">HOME</a> |
-            <div class="dropdown">
-                <button class="dropbtn">PÁGINAS</button>
-                <div class="dropdown-content">
-                    <a href="#evento" onclick="showSection('evento')">EVENTOS</a>
-                    <a href="#analise" onclick="showSection('analise')">CURSOS</a>
-                    <a href="#contato" onclick="showSection('contato')">CONTATO</a>
-                    <a href="#sobre" onclick="showSection('sobre')">SOBRE</a>
-                </div>
-            </div> |
+            <a href="#evento" onclick="showSection('evento')">EVENTOS</a> |
+            <a href="#contato" onclick="showSection('contato')">CONTATO</a> |
+            <a href="#sobre" onclick="showSection('sobre')">SOBRE</a> |
             <a href="#login" onclick="showSection('login')">ENTRAR</a>
         </div>
     </div>
